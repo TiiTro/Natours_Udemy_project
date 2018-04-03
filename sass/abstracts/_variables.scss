@@ -12,10 +12,16 @@ $color-tertiary-light: #2998ff;
 $color-tertiary-dark: #5643fa;
 
 $color-grey-light-1: #f7f7f7;
+$color-grey-light-2: #eee;
+
 
 $color-grey-dark: #777;
 $color-white: #fff;
 $color-black: #000;
+
+// GRADIENTS:
+
+$linear-gradient-orange: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
 
 //  FONTS {
 $default-font-size: 1.6rem;
