@@ -23,7 +23,13 @@
 
 .section-tours {
   background-color: $color-grey-light-1;
-  padding: 35rem 0 50rem 0;
+  padding: 35rem 0 10rem 0;
 
   margin-top: -20rem; //to cover area cut out
+}
+
+.section-stories {
+  padding: 15rem 0;
+  background-color: $color-grey-light-1;
+
 }
