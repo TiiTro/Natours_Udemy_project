@@ -23,6 +23,10 @@ $color-black: #000;
 
 $linear-gradient-orange: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
 
+$linear-gradient-green: linear-gradient(to right bottom,    $color-primary-light, $color-primary-dark);
+
+$linear-gradient-blue: linear-gradient(to right bottom,    $color-tertiary-light, $color-tertiary-dark);
+
 //  FONTS {
 $default-font-size: 1.6rem;
 

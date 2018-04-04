@@ -1,11 +1,11 @@
 .section-about {
   background-color: $color-grey-light-1;
-  padding: 25rem 0;
+  padding: 25rem 0 32rem 0;
   margin-top: -20vh; // to move the background up to cover the area cut out from the header section.
 }
 
 .section-features {
-  padding: 20rem 0;
+  padding: 25rem 0;
   background-image: linear-gradient(
     to right bottom,
     rgba($color-primary-light, 0.8), /* in Sass you can use hexa-values w opacity, in reg CSS not */
@@ -13,7 +13,7 @@
     url(../img/nat-4.jpg);
   background-size: cover;
   transform: skewY(-7deg);
-  margin-top: -10rem; //to move the section up to cover the area cut out w skew.
+  margin-top: -20rem; //to move the section up to cover the area cut out w skew.
 
   // unskew the child elements with DIRECT SELECTOR, * selects all
   & > * {
@@ -23,7 +23,7 @@
 
 .section-tours {
   background-color: $color-grey-light-1;
-  padding: 25rem 0 50rem 0;
+  padding: 35rem 0 50rem 0;
 
-  margin-top: -10rem; //to cover area cut out
+  margin-top: -20rem; //to cover area cut out
 }
