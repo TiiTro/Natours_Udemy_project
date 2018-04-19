@@ -234,10 +234,10 @@
 
       <section class="section-stories">
         <div class="bg-video">
-          <video class="bg-video__content">
+          <video class="bg-video__content" autoplay muted loop>
             <source src="img/video.mp4" type="video/mp4">
             <source src="img/video.webm" type="video/webm">
-              Your browser is not supported!
+              Your browser is not supported! <!-- will show if video can't be played -->
           </video>
         </div>
         <div class="u-center-text">
@@ -277,17 +277,40 @@
             <div class="row">
               <a href="#" class="button-text">Read more stories &rarr;</a>
             </div>
-
-
         </div>
-
-
-
-
-
-
-
       </section> <!-- stories -->
+
+
+    <!-- SECTION BOOK -->
+      <section class="section-book">
+        <div class="row">
+          <div class="book">
+            <div class="book__form">
+
+              <div class="u-margin-bottom-medium">
+                <h2 class="heading-secondary">
+                  Start booking now!
+                </h2>
+              </div>
+
+              <form action="#" class="form">
+                <div class="form__group">
+                  <input type="text" class="form__input" placeholder="Full name" id="name" required>
+                  <label for="name" class="form__label">Full name</label>
+                </div>
+
+                <div class="form__group">
+                  <input type="email" class="form__input" placeholder="Email address" id="email" required>
+                </div>
+
+              </form>
+            </div>
+
+          </div> <!-- row -->
+        </div> <!-- book -->
+
+
+      </section> <!-- end of SECTION-BOOK -->
 
     </main>
 
@@ -302,7 +325,7 @@
         <div class="col-1-of-2">
         Col 1 of 2
         </div>
-      </div>
+        </div>
 
       <div class="row">
         <div class="col-1-of-3">
