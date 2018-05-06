@@ -1,3 +1,19 @@
+/*
+0 - 600:  Phone:                       // max-width-styles
+600 - 900px: Tablet portrait:         // max-width-styles
+900 - 1200px: Tablet landscape:       // max-width-styles
+1200 - 1800px: Desktop                //NORMAL STYLES APPLY
+1800px --> Big desktop:               // min-width-styles
+
+
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+1em = 16px
+*/
 *,
 *::after,
 *::before {
@@ -7,7 +23,19 @@
 
 /* set root values in the html-properties */
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  /* @include respond(phone) {
+    font-size: 50%;
+  } // not needed, since the same applies with tab-port */ }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (max-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   box-sizing: border-box; }

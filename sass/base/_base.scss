@@ -8,7 +8,23 @@
 
 /* set root values in the html-properties */
 html {
-  font-size: 62.5%;
+  font-size: 62.5%; // 1rem = 10px; 10px/16px = 62.5%
+
+  @include respond(tab-land) { // asks if the width < 900
+    font-size: 56.25%; // 1rem = 9px, 9/16=56.25%
+  }
+
+  @include respond(tab-port) { // asks if the width < 600 --> needs to be AFTER tab-land, if we want it to apply!
+    font-size: 50%; // 1rem = 8px, 8/16=50%;
+  }
+
+  /* @include respond(phone) {
+    font-size: 50%;
+  } // not needed, since the same applies with tab-port */
+
+  @include respond(big-desktop) { //asks if the width is > 1800px;
+    font-size: 75%; //1rem =12px, 12/16=75%;
+  }
 }
 
 body {
