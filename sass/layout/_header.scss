@@ -4,7 +4,7 @@
     to right bottom,
     rgba($color-primary-light, 0.8), /* in Sass you can use hexa-values w opacity, in reg CSS not */
     rgba($color-primary-dark, 0.8)),
-    url(../img/hero.jpg);
+    url(../img/hero-small.jpg);
   background-size: cover; /* fits the image to the viewport as well as possible */
   background-position: top;
   position: relative;
@@ -12,6 +12,14 @@
   /* Clipping out part of the background! */
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+
+  @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+    background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary-light, 0.8), /* in Sass you can use hexa-values w opacity, in reg CSS not */
+      rgba($color-primary-dark, 0.8)),
+      url(../img/hero.jpg);
+  }
 
   //media-query for the clip-path
   @include respond(phone) {
