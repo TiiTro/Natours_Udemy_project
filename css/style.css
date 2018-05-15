@@ -279,8 +279,14 @@ body {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px; }
     .card__picture--1 {
-      background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../img/nat-5.jpg);
+      background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../img/nat-5-400.jpg);
       background-position: center; }
+      @media (min-resolution: 192dpi) {
+        .card__picture--1 {
+          background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../img/nat-5-800.jpg); } }
+      @media (min-resolution: 192dpi) and (max-width: 56.25em) {
+        .card__picture--1 {
+          background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../img/nat-5.jpg); } }
     .card__picture--2 {
       background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url(../img/nat-6.jpg);
       background-position: center; }
@@ -734,6 +740,9 @@ body {
   padding: 10rem 0;
   font-size: 1.4rem;
   color: #f7f7f7; }
+  @media (max-width: 93.75em) {
+    .footer {
+      padding: 10rem 4rem; } }
   @media (max-width: 56.25em) {
     .footer {
       padding: 8rem 0; } }
@@ -912,26 +921,38 @@ body {
   background-color: #f7f7f7;
   padding: 25rem 0 32rem 0;
   margin-top: -20vh; }
+  @media (max-width: 93.75em) {
+    .section-about {
+      padding: 20rem 4rem; } }
   @media (max-width: 56.25em) {
     .section-about {
       padding: 20rem 0; } }
 
 .section-features {
   padding: 25rem 0;
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/nat-4.jpg);
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/nat-4-small.png);
   background-size: cover;
   transform: skewY(-7deg);
   margin-top: -20rem; }
   .section-features > * {
     transform: skewY(7deg); }
+  @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+    .section-features {
+      background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/nat-4.jpg); } }
+  @media (max-width: 93.75em) {
+    .section-features {
+      padding: 13rem 4rem; } }
   @media (max-width: 56.25em) {
     .section-features {
-      padding: 15rem 0; } }
+      padding: 15rem 2rem; } }
 
 .section-tours {
   background-color: #f7f7f7;
   padding: 35rem 0 10rem 0;
   margin-top: -20rem; }
+  @media (max-width: 93.75em) {
+    .section-tours {
+      padding: 35rem 4rem; } }
   @media (max-width: 56.25em) {
     .section-tours {
       padding: 20rem 0 5rem 0; } }

@@ -4,6 +4,10 @@
   font-size: 1.4rem;
   color: $color-grey-light-1;
 
+  @include respond(desktop) {
+    padding: 10rem 4rem;
+  }
+
   @include respond(tab-port) {
     padding: 8rem 0;
   }

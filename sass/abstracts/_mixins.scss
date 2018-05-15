@@ -40,6 +40,10 @@ ORDER of working: Base + typography -->general layout + grid --> more specific p
     @media (max-width: 75em) {@content }; // = 1200px
   }
 
+  @if $breakpoint == desktop {
+    @media (max-width: 93.75em) {@content }; // = 1500px
+  }
+
   @if $breakpoint == big-desktop {
     @media (max-width: 112.5em) {@content };// = 1800 px
   }

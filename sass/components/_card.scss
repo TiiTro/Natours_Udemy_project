@@ -65,8 +65,17 @@
     border-top-right-radius: 5px;
 
     &--1 {
-      background-image: $linear-gradient-orange, url(../img/nat-5.jpg);
+      background-image: $linear-gradient-orange, url(../img/nat-5-400.jpg);
       background-position: center;
+
+      @media (min-resolution: 192dpi) {
+        background-image: $linear-gradient-orange, url(../img/nat-5-800.jpg);
+      }
+
+      @media (min-resolution: 192dpi) and (max-width: 56.25em) {
+        background-image: $linear-gradient-orange, url(../img/nat-5.jpg);
+      }
+
     }
 
 
