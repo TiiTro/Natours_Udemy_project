@@ -15,6 +15,7 @@
   top: 0;
   left: 0;
   width: 100%;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   border-radius: 3px;
   overflow: hidden; // hides the overflow of child elements and keeps the corners round
@@ -68,11 +69,13 @@
       background-image: $linear-gradient-orange, url(../img/nat-5-400.jpg);
       background-position: center;
 
-      @media (min-resolution: 192dpi) {
+      @media (min-resolution: 192dpi),
+              (-webkit-min-device-pixel-ratio: 2) {
         background-image: $linear-gradient-orange, url(../img/nat-5-800.jpg);
       }
 
-      @media (min-resolution: 192dpi) and (max-width: 56.25em) {
+      @media (min-resolution: 192dpi) and (max-width: 56.25em),
+              (-webkit-min-device-pixel-ratio: 2) and (max-width: 56.25em) {
         background-image: $linear-gradient-orange, url(../img/nat-5.jpg);
       }
 
@@ -83,11 +86,13 @@
       background-image: $linear-gradient-green, url(../img/nat-6-400.jpg);
       background-position: center;
 
-      @media (min-resolution: 192dpi) {
-        background-image: $linear-gradient-orange, url(../img/nat-6-800.jpg);
+      @media (min-resolution: 192dpi),
+            (-webkit-min-device-pixel-ratio: 2) {
+              background-image: $linear-gradient-orange, url(../img/nat-6-800.jpg);
       }
 
-      @media (min-resolution: 192dpi) and (max-width: 56.25em) {
+      @media (min-resolution: 192dpi) and (max-width: 56.25em),
+              (-webkit-min-device-pixel-ratio: 2) and (max-width: 56.25em) {
         background-image: $linear-gradient-orange, url(../img/nat-6.jpg);
       }
     }
@@ -96,11 +101,13 @@
     &--3 {
       background-image: $linear-gradient-blue, url(../img/nat-7-400.jpg);
 
-      @media (min-resolution: 192dpi) {
+      @media (min-resolution: 192dpi),
+              (-webkit-min-device-pixel-ratio: 2) {
         background-image: $linear-gradient-orange, url(../img/nat-7-800.jpg);
       }
 
-      @media (min-resolution: 192dpi) and (max-width: 56.25em) {
+      @media (min-resolution: 192dpi) and (max-width: 56.25em),
+              (-webkit-min-device-pixel-ratio: 2) and (max-width: 56.25em) {
         background-image: $linear-gradient-orange, url(../img/nat-7.jpg);
       }
     }

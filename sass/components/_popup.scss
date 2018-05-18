@@ -7,11 +7,16 @@
   background-color: rgba($color-black, .8);
   z-index: 3000;
   transition: all .3s;
-
-  // how to hide an element so that it's animatable
+  // how to hide an element so that it's still animatable
   opacity: 0;
   visibility: hidden;
 
+  // @supports- you can add modern features that will work, IF the feature is supported, can use operators (for example "or"):
+  @supports(-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba($color-black, .3);
+  }
 
 
   &__content {
