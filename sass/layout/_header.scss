@@ -21,6 +21,8 @@
       url(../img/hero.jpg);
   }
 
+
+
   //media-query for the clip-path
   @include respond(phone) {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
@@ -46,5 +48,9 @@
     transform: translate(-50%, -50%);
     backface-visibility: hidden; /* If animation is shaky, this should be "hidden"! Defines if the background of an element visible or hidden for the user in transitions? */
     text-align: center;
+
+    @include respond(tab-port) {
+    top: 50%;
+    }
   }
 }

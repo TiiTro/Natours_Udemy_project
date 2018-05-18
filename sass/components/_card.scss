@@ -80,13 +80,29 @@
 
 
     &--2 {
-      background-image: $linear-gradient-green, url(../img/nat-6.jpg);
+      background-image: $linear-gradient-green, url(../img/nat-6-400.jpg);
       background-position: center;
+
+      @media (min-resolution: 192dpi) {
+        background-image: $linear-gradient-orange, url(../img/nat-6-800.jpg);
+      }
+
+      @media (min-resolution: 192dpi) and (max-width: 56.25em) {
+        background-image: $linear-gradient-orange, url(../img/nat-6.jpg);
+      }
     }
 
 
     &--3 {
-      background-image: $linear-gradient-blue, url(../img/nat-7.jpg);
+      background-image: $linear-gradient-blue, url(../img/nat-7-400.jpg);
+
+      @media (min-resolution: 192dpi) {
+        background-image: $linear-gradient-orange, url(../img/nat-7-800.jpg);
+      }
+
+      @media (min-resolution: 192dpi) and (max-width: 56.25em) {
+        background-image: $linear-gradient-orange, url(../img/nat-7.jpg);
+      }
     }
   }
 
