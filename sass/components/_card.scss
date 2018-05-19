@@ -6,6 +6,9 @@
   position: relative;
   height: 60rem;
 
+  @media (min-width: 56.31em) and (max-width: 65.62em) {
+    height: 68rem;
+  }
 
   &__side {
   font-size: 2rem;
@@ -21,7 +24,9 @@
   overflow: hidden; // hides the overflow of child elements and keeps the corners round
   box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
 
-
+  @media (min-width: 56.31em) and (max-width: 65.62em) {
+    height: 68rem;
+  }
 
   &--front {
     background-color: $color-white;
@@ -123,12 +128,33 @@
     top: 12rem;
     right: 2rem;
     width: 75%;
+    overflow: hidden;
+
+    @media (min-width: 62.5em) and (max-width: 81.25em) {
+      font-size: 2.5rem;
+      width: 95%;
+      right: 1rem;
+    }
+
+    @media (min-width: 56.31em) and (max-width: 62.5em) {
+      font-size: 2.2rem;
+      width: 95%;
+      right: 0.5rem;
+    }
   }
 
   &__heading--span {
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
     padding: 1rem 1.5rem;
+
+    @media (min-width: 62.5em) and (max-width: 81.25em) {
+      padding: 1rem 1rem;
+    }
+
+    @media (min-width: 56.31em) and (max-width: 62.5em) {
+      padding: 0.5rem 0.5rem;
+    }
 
     &-1 {
     background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);

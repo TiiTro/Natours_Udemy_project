@@ -27,6 +27,8 @@ $breakpoint argument choices:
 ORDER of working: Base + typography -->general layout + grid --> more specific page layout --> components
 */
 
+
+
 @mixin respond ($breakpoint) {
   @if $breakpoint == phone { // means that if the breakpoint is phone, we want the following to happen:
     @media (max-width: 37.5em) {@content }; // = 600px! (600/16=37.5em)
