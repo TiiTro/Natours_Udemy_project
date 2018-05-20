@@ -6,7 +6,7 @@
   position: relative;
   height: 60rem;
 
-  @media (min-width: 56.31em) and (max-width: 65.62em) {
+  @media only screen and (min-width: 56.31em) and (max-width: 65.62em) {
     height: 68rem;
   }
 
@@ -24,7 +24,7 @@
   overflow: hidden; // hides the overflow of child elements and keeps the corners round
   box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
 
-  @media (min-width: 56.31em) and (max-width: 65.62em) {
+  @media only screen and (min-width: 56.31em) and (max-width: 65.62em) {
     height: 68rem;
   }
 
@@ -74,13 +74,13 @@
       background-image: $linear-gradient-orange, url(../img/nat-5-400.jpg);
       background-position: center;
 
-      @media (min-resolution: 192dpi),
-              (-webkit-min-device-pixel-ratio: 2) {
+      @media only screen and (min-resolution: 192dpi),
+              only screen and (-webkit-min-device-pixel-ratio: 2) {
         background-image: $linear-gradient-orange, url(../img/nat-5-800.jpg);
       }
 
-      @media (min-resolution: 192dpi) and (max-width: 56.25em),
-              (-webkit-min-device-pixel-ratio: 2) and (max-width: 56.25em) {
+      @media only screen and (min-resolution: 192dpi) and (max-width: 56.25em),
+              only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 56.25em) {
         background-image: $linear-gradient-orange, url(../img/nat-5.jpg);
       }
 
@@ -91,13 +91,13 @@
       background-image: $linear-gradient-green, url(../img/nat-6-400.jpg);
       background-position: center;
 
-      @media (min-resolution: 192dpi),
-            (-webkit-min-device-pixel-ratio: 2) {
+      @media only screen and (min-resolution: 192dpi),
+            only screen and (-webkit-min-device-pixel-ratio: 2) {
               background-image: $linear-gradient-orange, url(../img/nat-6-800.jpg);
       }
 
-      @media (min-resolution: 192dpi) and (max-width: 56.25em),
-              (-webkit-min-device-pixel-ratio: 2) and (max-width: 56.25em) {
+      @media only screen and (min-resolution: 192dpi) and (max-width: 56.25em),
+              only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 56.25em) {
         background-image: $linear-gradient-orange, url(../img/nat-6.jpg);
       }
     }
@@ -106,13 +106,13 @@
     &--3 {
       background-image: $linear-gradient-blue, url(../img/nat-7-400.jpg);
 
-      @media (min-resolution: 192dpi),
-              (-webkit-min-device-pixel-ratio: 2) {
+      @media only screen and (min-resolution: 192dpi),
+              only screen and (-webkit-min-device-pixel-ratio: 2) {
         background-image: $linear-gradient-orange, url(../img/nat-7-800.jpg);
       }
 
-      @media (min-resolution: 192dpi) and (max-width: 56.25em),
-              (-webkit-min-device-pixel-ratio: 2) and (max-width: 56.25em) {
+      @media only screen and (min-resolution: 192dpi) and (max-width: 56.25em),
+              only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 56.25em) {
         background-image: $linear-gradient-orange, url(../img/nat-7.jpg);
       }
     }
@@ -130,13 +130,13 @@
     width: 75%;
     overflow: hidden;
 
-    @media (min-width: 62.5em) and (max-width: 81.25em) {
+    @media only screen and (min-width: 62.5em) and (max-width: 81.25em) {
       font-size: 2.5rem;
       width: 95%;
       right: 1rem;
     }
 
-    @media (min-width: 56.31em) and (max-width: 62.5em) {
+    @media only screen and (min-width: 56.31em) and (max-width: 62.5em) {
       font-size: 2.2rem;
       width: 95%;
       right: 0.5rem;
@@ -148,11 +148,11 @@
     box-decoration-break: clone;
     padding: 1rem 1.5rem;
 
-    @media (min-width: 62.5em) and (max-width: 81.25em) {
+    @media only screen and (min-width: 62.5em) and (max-width: 81.25em) {
       padding: 1rem 1rem;
     }
 
-    @media (min-width: 56.31em) and (max-width: 62.5em) {
+    @media only screen and (min-width: 56.31em) and (max-width: 62.5em) {
       padding: 0.5rem 0.5rem;
     }
 
@@ -225,7 +225,9 @@
 
   // !!! MEDIA QUERY !!!
 
-  @include respond(tab-port) {
+  // @include respond(tab-port) {
+  @media only screen and (max-width: 56.25em),
+    only scree and (hover:none) {
     height: auto;
     border-radius: 3px;
     background-color: $color-white;
