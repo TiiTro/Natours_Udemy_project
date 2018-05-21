@@ -440,9 +440,17 @@
   <div class="popup" id="popup">
     <div class="popup__content">
       <div class="popup__left">
-        <img src="img/nat-8.jpg" alt="Tour photo" class="popup__img">
-        <img src="img/nat-9.jpg" alt="Tour photo" class="popup__img">
-      </div>
+        <div class="popup__img">
+
+          <img srcset="img/nat-8-405x270px.jpg 1x, img/nat-8-825x550px.jpg 2x" alt="Tour photo" class="popup__img-1">
+          <!-- <img src="img/nat-8.jpg" alt="Tour photo" class="popup_img-1"> -->
+        </div> <!-- img -->
+        <div class="popup__img">
+          <img srcset="img/nat-9-392x270px.jpg 1x, img/nat-8-800x550px.jpg 2x" alt="Tour photo" class="popup__img-2">
+          <!-- <img src="img/nat-9.jpg" alt="Tour photo" class="popup_img-2"> -->
+        </div> <!-- img -->
+
+      </div> <!-- left -->
       <div class="popup__right">
         <a href="#section-tours" class="popup__close">&times;</a>
         <h2 class="heading-secondary u-margin-bottom-small">Start booking now</h2>
